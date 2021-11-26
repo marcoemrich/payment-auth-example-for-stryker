@@ -1,0 +1,27 @@
+{
+  "name": "payment-auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
+    "test:cov": "NODE_OPTIONS=--experimental-vm-modules npx jest --coverage",
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules npx jest --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "jest": "^27.3.1"
+  },
+  "wallaby": {
+    "autoDetect": true,
+    "env": {
+      "params": {
+        "runner": "--experimental-vm-modules"
+      }
+    }
+  },
+  "type": "module"
+}
