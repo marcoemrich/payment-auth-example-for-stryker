@@ -15,13 +15,5 @@
     "@types/jest": "^27.0.3",
     "jest": "^27.3.1"
   },
-  "wallaby": {
-    "autoDetect": true,
-    "env": {
-      "params": {
-        "runner": "--experimental-vm-modules"
-      }
-    }
-  },
   "type": "module"
 }
