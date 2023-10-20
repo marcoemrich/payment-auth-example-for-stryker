@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --verbose",
-    "stryker": "NODE_OPTIONS=--experimental-vm-modules stryker run",
-    "test:cov": "NODE_OPTIONS=--experimental-vm-modules npx jest --coverage",
-    "test:watch": "NODE_OPTIONS=--experimental-vm-modules npx jest --watchAll"
+    "test": "npx jest --verbose",
+    "stryker": "stryker run",
+    "test:cov": "npx jest --coverage",
+    "test:watch": "npx jest --watchAll"
   },
   "keywords": [],
   "author": "",

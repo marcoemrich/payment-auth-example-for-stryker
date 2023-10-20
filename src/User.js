@@ -1,7 +1,9 @@
-export class User {
+class User {
   constructor(name, limit, supervisor) {
     this.name = name;
     this.limit = limit;
     this.supervisor = supervisor;
   }
 }
+
+module.exports = User;

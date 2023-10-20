@@ -1,6 +1,6 @@
-import { PaymentAuth } from "./PaymentAuth";
+const PaymentAuth = require("./PaymentAuth");
 
-export const primaryApprover = (initiator, amount) => {
+const primaryApprover = (initiator, amount) => {
   let supervisor = initiator.supervisor;
   let limit = supervisor.limit;
   const maxIterations = 10; // preventing infinite loops
@@ -13,7 +13,7 @@ export const primaryApprover = (initiator, amount) => {
   return supervisor;
 };
 
-export const checkFor = (payment) => {
+const checkFor = (payment) => {
   const paymentAuth = new PaymentAuth();
   const initiator = payment.initiator;
   const amount = payment.amount;
@@ -28,3 +28,5 @@ export const checkFor = (payment) => {
   }
   return paymentAuth;
 };
+
+module.exports = { checkFor, primaryApprover };

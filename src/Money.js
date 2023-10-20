@@ -1,4 +1,4 @@
-export class Money {
+class Money {
   constructor(majorAmount, minorAmount) {
     this.majorAmount = majorAmount;
     this.minorAmount = minorAmount;
@@ -13,3 +13,5 @@ export class Money {
     return this.toDecimal() - other.toDecimal();
   }
 }
+
+module.exports = Money;

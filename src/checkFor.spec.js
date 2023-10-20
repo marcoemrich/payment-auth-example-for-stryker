@@ -1,7 +1,8 @@
-import { User } from "./User";
-import { Money } from "./Money";
-import { Payment } from "./Payment";
-import { checkFor } from "./checkFor";
+const User = require("./User");
+const Money = require("./Money");
+const Payment = require("./Payment");
+const PaymentAuth = require("./PaymentAuth");
+const { checkFor } = require("./checkFor");
 
 describe("checkFor", () => {
   it("should not need approval if payment by initiator with limit more than amount", () => {
