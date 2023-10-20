@@ -1,7 +1,6 @@
 const User = require("./User");
 const Money = require("./Money");
 const Payment = require("./Payment");
-const PaymentAuth = require("./PaymentAuth");
 const { checkFor } = require("./checkFor");
 
 describe("checkFor", () => {
