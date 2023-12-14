@@ -18,9 +18,11 @@ const checkFor = (payment) => {
   const initiator = payment.initiator;
   const amount = payment.amount;
   const limit = initiator.limit;
+
   if (amount.compareTo(limit) <= 0) {
     paymentAuth.approvalNeeded = false;
   }
+
   if (amount.compareTo(limit) > 0) {
     paymentAuth.approvalNeeded = true;
     const approver = primaryApprover(initiator, amount);
